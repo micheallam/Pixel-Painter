@@ -84,12 +84,11 @@ public class KeyboardListener extends JFrame implements KeyListener{
 				panel[initialROW][initialCOL].setBackground(playerColor);
 			}
 		}else if(keyCode == ke.VK_SPACE) {
-			prevROW = initialROW;
-			prevCOL = initialCOL;
-			if(colorArray[prevROW][prevCOL] == Color.WHITE) {
-				colorArray[prevROW][prevCOL] = Color.BLACK;
+			
+			if(colorArray[initialROW][initialCOL] == Color.WHITE) {
+				colorArray[initialROW][initialCOL] = Color.BLACK;
 			}else {
-				colorArray[prevROW][prevCOL] = Color.WHITE;
+				colorArray[initialROW][initialCOL] = Color.WHITE;
 			}
 		}
 	}
